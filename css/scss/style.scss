@@ -1,0 +1,211 @@
+// Reset
+
+@import "_reset.scss";
+
+// Styles
+
+html, body {
+	width: 100%;
+	height: 100%;
+	background-color: #f4f4f4;
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+	min-height: 1px;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+
+// Header
+
+.header {
+	height: 80px;
+	width: 100%;
+	background-color: white;
+	.inner {
+		margin: 0px 10px;
+	}
+
+	.logo {
+		font-weight: bold;
+		font-size: 26px;
+		float: left;
+		padding: 27px 0px;
+		padding-right: 24px;
+	}
+
+	.nav {
+		float: right;
+	}
+
+	.nav a {
+		float: left;
+		display: block;
+		line-height: 1;
+		font-size: 16px;
+		padding: 32px 8px;
+	}
+
+	a.current {
+		color: #1c8ddd;
+	}
+
+	.nav a:first-child {
+		padding-left: 0;
+	}
+}
+
+// Body
+
+.body {
+	-webkit-animation-duration: 2s;
+	-webkit-animation-name: fadeIn;
+	animation-duration: 2s;
+	animation-name: fadeIn;
+	padding-bottom: 60px;
+	.wrapper {
+		margin-top: 20px;
+	}
+}
+
+.subnav {
+	margin: 0px 10px;
+	height: 40px;
+	a {
+		font-size: 14px;
+		padding: 13px 12px;
+		margin-right: 8px;
+		display: block;
+		float: left;
+	}
+
+	a:hover {
+		background-color: white;
+	}
+}
+
+.gallery-grid li {
+	margin: 10px;
+	padding: 5px;
+	width: 290px;
+	height: 210px;
+	background-color: white;
+	float: left;
+	border-radius: 3px;
+	.inner {
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 125% auto;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+// Animation
+
+/***
+
+Fade In
+
+***/
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+
+// Sample Work
+
+.s1 {
+	background-image: url(../img/sample1.jpg);
+}
+
+.s2 {
+	background-image: url(../img/sample2.jpg);
+}
+
+.s3 {
+	background-image: url(../img/sample3.jpg);
+}
+
+.s4 {
+	background-image: url(../img/sample4.jpg);
+}
+
+.s5 {
+	background-image: url(../img/sample5.jpg);
+}
+
+.s6 {
+	background-image: url(../img/sample6.jpg);
+}
+
+.s7 {
+	background-image: url(../img/sample7.jpg);
+}
+
+.s8 {
+	background-image: url(../img/sample8.jpg);
+}
+
+.s9 {
+	background-image: url(../img/sample9.jpg);
+}
+
+.s10 {
+	background-image: url(../img/sample10.jpg);
+}
+
+.s11 {
+	background-image: url(../img/sample11.gif);
+}
+
+.s12 {
+	background-image: url(../img/sample12.jpg);
+}
+
+.s13 {
+	background-image: url(../img/sample13.jpg);
+}
+
+.s14 {
+	background-image: url(../img/sample14.jpg);
+}
+
+.s15 {
+	background-image: url(../img/sample15.jpg);
+}
