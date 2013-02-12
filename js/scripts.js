@@ -1,6 +1,15 @@
 // Load scripts after page loads
-$(document).ready(function(){
-	$('.entry a.image').imgPreview({
-		imgCSS: { maxWidth: 600 }
-	});
+$(window).load(function(){
+	$(".image").fancybox({
+    	openEffect	: 'elastic',
+    	closeEffect	: 'elastic',
+    	maxWidth    : '70%',
+    	padding     : 10,
+
+    	helpers : {
+    		title : {
+    			type : 'inside'
+    		},
+    	}
+    });	
 });
